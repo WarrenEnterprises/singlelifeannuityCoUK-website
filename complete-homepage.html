@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Life Annuity - Secure Your Financial Future</title>
+</head>
+<body>
+
+<!-- Header -->
+<header class="sla-header">
+    <div class="sla-container">
+        <div class="sla-header-content">
+            <a href="/" class="sla-logo">
+                <div class="sla-logo-icon">🛡️</div>
+                <h1>Single Life Annuity</h1>
+            </a>
+            <nav class="sla-nav">
+                <a href="/">Home</a>
+                <a href="/annuity-information/">Annuity Information</a>
+                <a href="/calculator/">Calculator</a>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+            <a href="/contact/" class="sla-header-cta">Get Quote</a>
+            <button class="sla-mobile-menu">☰</button>
+        </div>
+    </div>
+</header>
+
+<div class="sla-page">
+    <!-- Hero Section -->
+    <section class="sla-hero">
+        <div class="sla-container">
+            <div class="sla-hero-grid">
+                <div class="sla-hero-content">
+                    <h1>Secure Your Financial Future with <span class="highlight">Single Life Annuities</span></h1>
+                    <p>Guaranteed income for life with competitive rates and trusted expertise. Plan your retirement with confidence and peace of mind.</p>
+                    <div class="sla-button-group">
+                        <a href="#calculator" class="sla-btn sla-btn-primary">📊 Calculate Your Annuity</a>
+                        <a href="/annuity-information/" class="sla-btn sla-btn-secondary">📚 Learn More</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="sla-calculator" id="calculator">
+                        <div class="sla-calculator-header">
+                            <div class="sla-calculator-icon">📈</div>
+                            <h3>Annuity Calculator</h3>
+                        </div>
+                        <form id="annuity-calculator">
+                            <div class="sla-form-group">
+                                <label for="age">Your Age</label>
+                                <input type="number" id="age" min="50" max="85" value="65" />
+                            </div>
+                            <div class="sla-form-group">
+                                <label for="pension-fund">Pension Fund (£)</label>
+                                <div class="sla-input-group">
+                                    <button type="button" id="decrease-fund">−</button>
+                                    <input type="number" id="pension-fund" min="1000" step="1000" value="100000" />
+                                    <button type="button" id="increase-fund">+</button>
+                                </div>
+                            </div>
+                            <div class="sla-form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender">
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div id="calculator-loading" class="sla-hidden">
+                                <div class="sla-loading">
+                                    <div class="sla-spinner"></div>
+                                    <div class="sla-loading-text">Calculating best rates...</div>
+                                </div>
+                            </div>
+                            <div id="calculator-result" class="sla-hidden">
+                                <div class="sla-result">
+                                    <h4>Your Estimated Annuity Income</h4>
+                                    <div class="sla-result-grid">
+                                        <div class="sla-result-item">
+                                            <span class="sla-result-value" id="monthly-income">£0</span>
+                                            <span class="sla-result-label">Per Month</span>
+                                        </div>
+                                        <div class="sla-result-item">
+                                            <span class="sla-result-value" id="annual-income">£0</span>
+                                            <span class="sla-result-label">Per Year</span>
+                                        </div>
+                                    </div>
+                                    <div class="sla-result-meta">
+                                        <div class="sla-result-rate">Annual Rate: <span id="annual-rate">0.00%</span></div>
+                                        <div class="sla-result-provider">Best rate from <span id="provider">Aviva</span></div>
+                                    </div>
+                                    <div style="background: white; padding: 24px; border-radius: 16px; font-size: 1rem; color: #6b7280; line-height: 1.6;">
+                                        <strong style="color: #374151;">Key Benefits:</strong><br>
+                                        • Guaranteed income for life<br>
+                                        • Payments continue regardless of market performance<br>
+                                        • Tax-efficient structure<br>
+                                        • No management fees once purchased
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="calculate-btn" class="sla-btn sla-btn-primary" style="width: 100%; margin-top: 20px;">
+                                🧮 Calculate Quote
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="sla-section">
+        <div class="sla-container">
+            <h2>Why Choose Our Annuities?</h2>
+            <p class="sla-subtitle">We provide secure, reliable annuity solutions with competitive rates and exceptional service</p>
+            
+            <div class="sla-features">
+                <div class="sla-feature">
+                    <div class="sla-feature-icon blue">🛡️</div>
+                    <h3>Guaranteed Security</h3>
+                    <p>Your investment is protected with guaranteed returns and complete peace of mind for your retirement years.</p>
+                </div>
+                
+                <div class="sla-feature">
+                    <div class="sla-feature-icon green">💷</div>
+                    <h3>Competitive Rates</h3>
+                    <p>We shop the entire market to ensure you get the best possible annuity rates available today.</p>
+                </div>
+                
+                <div class="sla-feature">
+                    <div class="sla-feature-icon purple">👥</div>
+                    <h3>Expert Guidance</h3>
+                    <p>Our qualified advisors provide personalized guidance to help you make the right retirement decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="sla-section sla-section-alt">
+        <div class="sla-content">
+            <h2 class="sla-text-center">What Is a Single Life Annuity?</h2>
+            <p class="sla-subtitle">Your Complete Guide to Securing Retirement Income</p>
+            
+            <p>Picture this: You're approaching retirement, and that pension pot you've been nurturing for decades is finally ready to bloom. But here's the million-pound question (or perhaps the £100,000 question for most of us): How do you turn that nest egg into a reliable monthly income that won't run out before you do?</p>
+            
+            <p>Enter the single life annuity – the financial equivalent of a loyal friend who promises to pay you a regular income for the rest of your days, come rain or shine. But before you rush to sign on the dotted line, let's explore what this retirement product really offers and whether it's the right fit for your golden years.</p>
+
+            <h3>What Exactly Is a Single Life Annuity?</h3>
+            <p>Think of a single life annuity as a simple exchange: you hand over a lump sum from your pension pot to an insurance company, and in return, they promise to pay you a fixed income every month for as long as you live. It's like buying a lifetime subscription to financial security – once you've paid the upfront cost, the payments keep coming until the very end.</p>
+
+            <h3>The Numbers Game: How Much Can You Expect?</h3>
+            <p>Let's talk turkey – or rather, pounds and pence. The current best single life annuity rate for a 65-year-old male is 7.79% from Aviva. To put that in perspective, a healthy 65-year-old with a £100,000 pension pot can currently secure an annuity paying around £7,000 to £7,425 per year.</p>
+
+            <p>UK annuity rates have risen significantly over the last few years because they're closely linked to interest rates. We're almost at a 17-year high, making now an excellent time to consider an annuity.</p>
+
+            <div class="sla-text-center sla-mb-4">
+                <a href="/annuity-information/" class="sla-btn sla-btn-primary">📖 Read Complete Guide</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="sla-section sla-section-blue">
+        <div class="sla-container">
+            <div class="sla-cta">
+                <h2>Ready to Secure Your Financial Future?</h2>
+                <p class="sla-subtitle">Get a personalized annuity quote in minutes and discover how much guaranteed income you could receive.</p>
+                <div class="sla-button-group">
+                    <a href="/contact/" class="sla-btn sla-btn-primary" style="background: white !important; color: #0ea5e9 !important;">💬 Get Free Quote</a>
+                    <a href="tel:0845-748-8347" class="sla-btn sla-btn-secondary" style="border-color: white !important; color: white !important;">📞 Call: 0845-748 8347</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="sla-footer">
+    <div class="sla-container">
+        <div class="sla-footer-grid">
+            <div class="sla-footer-section">
+                <div class="sla-footer-brand">
+                    <div class="sla-logo-icon">🛡️</div>
+                    <h3>Single Life Annuity</h3>
+                </div>
+                <p>Providing secure retirement solutions with guaranteed income for life. Expert guidance for your financial future.</p>
+            </div>
+            
+            <div class="sla-footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/single-life-annuities/">Single Life Annuities</a></li>
+                    <li><a href="/joint-life-annuities/">Joint Life Annuities</a></li>
+                    <li><a href="/enhanced-annuities/">Enhanced Annuities</a></li>
+                    <li><a href="/pension-reviews/">Pension Reviews</a></li>
+                </ul>
+            </div>
+            
+            <div class="sla-footer-section">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="/how-annuities-work/">How Annuities Work</a></li>
+                    <li><a href="/calculator/">Annuity Calculator</a></li>
+                    <li><a href="/tax-information/">Tax Information</a></li>
+                    <li><a href="/faqs/">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="sla-footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📞 0845-748 8347</li>
+                    <li>✉️ info@singlelifeannuity.co.uk</li>
+                    <li>📍 Warren Enterprises Inc<br>2 Clos Collette Nicolle<br>Green Lanes, St Peter Port<br>Guernsey GY1 1TR</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="sla-footer-bottom">
+            <p>© 2025 Single Life Annuity. All rights reserved.</p>
+            <div class="sla-footer-links">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-of-service/">Terms of Service</a>
+                <a href="/cookie-policy/">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ageInput = document.getElementById('age');
+    const pensionFundInput = document.getElementById('pension-fund');
+    const genderSelect = document.getElementById('gender');
+    const decreaseBtn = document.getElementById('decrease-fund');
+    const increaseBtn = document.getElementById('increase-fund');
+    const calculateBtn = document.getElementById('calculate-btn');
+    const resultDiv = document.getElementById('calculator-result');
+    const loadingDiv = document.getElementById('calculator-loading');
+    
+    // Best annuity rates from The Times article (December 2024)
+    const rates = {
+        male: [
+            { provider: 'Aviva', rate: 7.79 },
+            { provider: 'Canada Life', rate: 7.73 },
+            { provider: 'Legal & General', rate: 7.70 },
+            { provider: 'Just Retirement', rate: 7.68 },
+            { provider: 'Partnership', rate: 7.65 },
+            { provider: 'Prudential', rate: 7.60 },
+            { provider: 'Standard Life', rate: 7.55 }
+        ],
+        female: [
+            { provider: 'Aviva', rate: 7.25 },
+            { provider: 'Canada Life', rate: 7.20 },
+            { provider: 'Legal & General', rate: 7.18 },
+            { provider: 'Just Retirement', rate: 7.15 },
+            { provider: 'Partnership', rate: 7.12 },
+            { provider: 'Prudential', rate: 7.08 },
+            { provider: 'Standard Life', rate: 7.05 }
+        ]
+    };
+    
+    function getBestRate(gender, age) {
+        const genderRates = rates[gender];
+        let ageMultiplier = 1.0;
+        
+        if (age < 60) ageMultiplier = 0.75;
+        else if (age < 65) ageMultiplier = 0.85;
+        else if (age < 70) ageMultiplier = 1.0;
+        else if (age < 75) ageMultiplier = 1.1;
+        else ageMultiplier = 1.2;
+        
+        const bestRate = genderRates[0];
+        return {
+            provider: bestRate.provider,
+            rate: bestRate.rate * ageMultiplier
+        };
+    }
+    
+    function formatCurrency(amount) {
+        return new Intl.NumberFormat('en-GB', {
+            style: 'currency',
+            currency: 'GBP',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+        }).format(amount);
+    }
+    
+    function formatCurrencyPrecise(amount) {
+        return new Intl.NumberFormat('en-GB', {
+            style: 'currency',
+            currency: 'GBP',
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        }).format(amount);
+    }
+    
+    function calculateAnnuity() {
+        const age = parseInt(ageInput.value);
+        const pensionFund = parseInt(pensionFundInput.value);
+        const gender = genderSelect.value;
+        
+        if (!pensionFund || pensionFund < 1000 || !age || age < 50 || age > 85) {
+            return;
+        }
+        
+        loadingDiv.classList.remove('sla-hidden');
+        resultDiv.classList.add('sla-hidden');
+        
+        setTimeout(() => {
+            const bestRate = getBestRate(gender, age);
+            const annualIncome = (pensionFund * bestRate.rate) / 100;
+            const monthlyIncome = annualIncome / 12;
+            
+            document.getElementById('monthly-income').textContent = formatCurrencyPrecise(monthlyIncome);
+            document.getElementById('annual-income').textContent = formatCurrency(annualIncome);
+            document.getElementById('annual-rate').textContent = bestRate.rate.toFixed(2) + '%';
+            document.getElementById('provider').textContent = bestRate.provider;
+            
+            loadingDiv.classList.add('sla-hidden');
+            resultDiv.classList.remove('sla-hidden');
+        }, 1500);
+    }
+    
+    decreaseBtn.addEventListener('click', () => {
+        const current = parseInt(pensionFundInput.value);
+        if (current > 1000) {
+            pensionFundInput.value = current - 1000;
+            calculateAnnuity();
+        }
+    });
+    
+    increaseBtn.addEventListener('click', () => {
+        const current = parseInt(pensionFundInput.value);
+        pensionFundInput.value = current + 1000;
+        calculateAnnuity();
+    });
+    
+    calculateBtn.addEventListener('click', calculateAnnuity);
+    
+    [ageInput, pensionFundInput, genderSelect].forEach(input => {
+        input.addEventListener('change', () => {
+            setTimeout(calculateAnnuity, 500);
+        });
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Auto-calculate on page load
+    calculateAnnuity();
+});
+</script>
+
+</body>
+</html>

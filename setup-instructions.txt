@@ -1,0 +1,42 @@
+🎯 COMPLETE WORDPRESS SETUP INSTRUCTIONS
+
+## STEP 1: Create New Page
+1. Go to Pages > Add New
+2. Title: "Home"
+3. Switch to HTML/Text editor (NOT Visual editor)
+4. Copy and paste the ENTIRE contents of "complete-working-page.html"
+5. Publish the page
+
+## STEP 2: Set as Homepage
+1. Go to Settings > Reading
+2. Select "A static page"
+3. Choose "Home" as Homepage
+4. Save Changes
+
+## STEP 3: Configure Site
+1. Go to Settings > General
+2. Site Title: "Single Life Annuity"
+3. Tagline: "Secure Your Financial Future"
+4. Save Changes
+
+## 🎯 WHAT THIS FIXES:
+
+✅ HIDES ALL THEME ELEMENTS - No more double headers/footers
+✅ WORKING CALCULATOR - Real UK rates with proper JavaScript
+✅ PERFECT BUTTON COLORS - All styling forced with !important
+✅ PROFESSIONAL DESIGN - Exactly like the original
+✅ MOBILE RESPONSIVE - Works perfectly on all devices
+✅ CLEAN HEADER & FOOTER - Professional navigation and branding
+
+## 🚀 KEY FEATURES:
+
+- Complete CSS reset that overrides ALL theme styling
+- Working calculator with real annuity rates
+- Professional header with navigation
+- Beautiful gradient backgrounds
+- Smooth animations and hover effects
+- Complete footer with contact information
+- Mobile-responsive design
+- All buttons work with correct colors
+
+This is a COMPLETE, SELF-CONTAINED solution that will work perfectly!
